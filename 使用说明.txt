@@ -1,0 +1,32 @@
+一、概述
+本软件包是基于 Chrome119_AllNew_2023.11.2 修改而来，主要修改以下内容：
+1、把绿色版Chrmoe移到上级目录，以方便单独升级浏览器版本。
+2、启动chrome时把用户数据放到当前目录下的 chrome-user-data，以便实现一个隔离的浏览环境（纯绿色）。
+
+
+二、如何升级chrome
+1、要升级chrome，只需要下载新版的chrome绿色版，放到本目录的上级目录，例如：
+..\Chrome120
+，然后修改 0.start_chrome.cmd 中的Chrome路径即可。
+如果没有绿色版Chrome，也可以使用操作系统中安装的Chrome
+
+2、绿色版Chrome可以从
+https://github.com/Alvin9999/new-pac/wiki
+下载集成浏览包，然后把里面的App目录复制到本目录上级目录，改名为Chrome_XXX （XXX为版本号），然后修改 0.start_chrome.cmd
+
+
+三、如何清空用户数据
+1、要清空数据，只需删除当前目录下的 chrome-user-data 即可恢复成一个完全干净的环境
+
+四、如何升级各代理软件
+1、要升级各代理软件，从
+https://github.com/Alvin9999/new-pac/wiki
+下载集成浏览包，然后把里面的 clash.meta、hysteria、hysteria2、naiveproxy、Quick、singbox、Xray 几个
+目录解压后替换到当前目录下的各同名目录即可（最好是把原来的这些目录先备份一下，然后删除旧目录）
+
+五、升级代理软件如何保存原有用户数据
+要保存用户数据，只需要保存整个chrome-user-data即可
+
+
+
+
